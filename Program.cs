@@ -29,6 +29,8 @@ namespace URLify
 
         /// <summary>
         /// Using the performance from string.Create() to create the new string. This uses Span<T>.
+        /// 
+        /// This is only possible with .NET 5.0 Core. The string functionality is not possible in .NET Framework.
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
